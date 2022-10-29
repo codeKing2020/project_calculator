@@ -28,3 +28,12 @@ const operate = function(a, b, operation) {
             return "ERROR"
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll(".button")
+    buttons.forEach(element => {
+        element.addEventListener('click', button => {
+            console.log(button.target)
+        })
+    });
+});
