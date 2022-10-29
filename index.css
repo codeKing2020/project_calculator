@@ -25,19 +25,21 @@ body {
 
 h2 {
     text-align: center;
+    margin: 6px;
 }
 
 #calculator {
     width: 484px;
-    height: 264px;
+    height: 330px;
     border: 2px solid black;
     margin: auto;
+    padding: 8px;
 }
 
 #container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   align-content: stretch;
   justify-items: stretch;
   gap: 10px;
@@ -46,4 +48,12 @@ h2 {
 
 .calc {
     grid-column: -3 / -1;
+    background-color: white;
+    color: red;
+}
+
+.clear {
+    grid-column: -5 / -1;
+    background-color: grey;
+    color: white;
 }
